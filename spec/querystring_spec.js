@@ -18,4 +18,13 @@ describe('parseQueryString', function () {
     expect(actual).toEqual(expected);
 
   });
+
+  it('returns an empty object when input is null', function(){
+    var input = null;
+    var actual = parseQueryString(input);
+    var expected = {};
+
+    expect(actual).toEqual(expected);
+    
+  });
 });
